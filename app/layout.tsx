@@ -6,6 +6,7 @@ import { SessionProvider } from "../components/SessionProvider";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import Login from "../components/Login";
 import ClientProvider from "../components/ClientProvider";
+import Head from "./head";
 
 export default async function RootLayout({
   children,
@@ -15,11 +16,9 @@ export default async function RootLayout({
 
   const session = await getServerSession(authOptions);
 
-
-
   return (
     <html lang="en">
-      <head />
+      <Head />
       <body>
         <SessionProvider session={session}>
           {!session ? (

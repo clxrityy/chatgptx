@@ -10,6 +10,8 @@ import ChatRow from './ChatRow';
 
 function SideBar() {
 
+
+
     const { data: session } = useSession();
 
     const [chats, loading, error] = useCollection(
