@@ -16,7 +16,7 @@ export default function ModelSelection() {
     const [selected, setSelected] = useState(false);
 
     return (
-        <div className='mt-4'>
+        <div className='mt-2'>
             {!selected && (
                 <div
                     onClick={() => setSelected(true)}

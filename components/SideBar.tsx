@@ -26,7 +26,7 @@ function SideBar() {
     return (
         <div className='p-2 flex flex-col h-screen'>
             <div className='flex-1'>
-                <div>
+                <div className='space-y-4'>
 
                     <div className='hidden sm:inline'>
                         {/* ModelSelection */}
