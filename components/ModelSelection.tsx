@@ -14,6 +14,7 @@ export default function ModelSelection() {
     return (
         <div className='mt-2'>
             <Select
+                
                 className='mt-2'
                 options={models?.modelOptions}
                 defaultValue={model}
@@ -22,7 +23,7 @@ export default function ModelSelection() {
                 isLoading={isLoading}
                 menuPosition='fixed'
                 classNames={{
-                    control: (state) => "bg-[#5e6386] border-[#434654]"
+                    control: (state) => state.isFocused ? 'border-[#8290e6]' : 'border-gray-600'
                 }}
                 onChange={(e) => setModel(e.value)}
             />
