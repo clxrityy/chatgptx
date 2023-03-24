@@ -2,6 +2,8 @@
   "name": "chatgpt-x",
   "version": "0.1.0",
   "private": true,
+  "author": "MJ Anglin",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
