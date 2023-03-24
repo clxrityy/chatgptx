@@ -6,7 +6,6 @@ import logo from './assets/logo.png';
 export default function Login() {
     return (
         <div className="bg-[#8290e6] h-screen flex flex-col items-center justify-center text-center">
-            
             <Image
                 src={logo}
                 width={300}

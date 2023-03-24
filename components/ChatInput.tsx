@@ -6,6 +6,8 @@ import { useSession } from "next-auth/react";
 import { FormEvent, useState } from "react";
 import { db } from "../firebase";
 import toast from "react-hot-toast";
+import ModelSelection from "./ModelSelection";
+import useSWR from 'swr';
 
 type Props = {
     chatId: string;
@@ -15,9 +17,12 @@ export default function ChatInput({ chatId }: Props) {
 
     const [prompt, setPrompt] = useState("");
     const { data: session } = useSession();
+    const { data: model } = useSWR('model', {
+        fallbackData: 'text-davinci-003'
+    });
 
-    // useSWR to get model
-    const model = 'ada';
+
+    
 
     const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -83,8 +88,9 @@ export default function ChatInput({ chatId }: Props) {
                     <PaperAirplaneIcon className="h-4 w-4 -rotate-45" />
                 </button>
 
-                <div>
+                <div className="md:hidden">
                     {/* ModelSelection */}
+                    <ModelSelection />
                 </div>
             </form>
         </div>
