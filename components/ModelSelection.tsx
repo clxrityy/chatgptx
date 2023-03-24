@@ -16,13 +16,13 @@ export default function ModelSelection() {
     const [selected, setSelected] = useState(false);
 
     return (
-        <div className='mt-2'>
+        <div className='mt-4'>
             {!selected && (
                 <div
                     onClick={() => setSelected(true)}
                     className='rounded-md mt-2 bg-[#8290e6] hover:bg-[#5966c0] ease-out duration-200 text-center flex items-center justify-center space-x-2 text-gray-300 transition-all px-5 py-3 cursor-pointer'
                 >
-                    <CogIcon className='text-white h-4 w-4' />
+                    <CogIcon className='text-white h-5 w-5' />
                     <p className='hidden md:block'>
                         Model Settings
                     </p>

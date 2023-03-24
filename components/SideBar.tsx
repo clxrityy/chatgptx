@@ -27,13 +27,13 @@ function SideBar() {
         <div className='p-2 flex flex-col h-screen'>
             <div className='flex-1'>
                 <div>
-                    {/* NewChat */}
-                    <NewChat />
 
                     <div className='hidden sm:inline'>
                         {/* ModelSelection */}
                         <ModelSelection />
                     </div>
+                    {/* NewChat */}
+                    <NewChat />
 
                     <div className='flex flex-col space-y-2 my-2'>
 
