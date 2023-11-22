@@ -20,7 +20,7 @@
     "firebase": "^9.18.0",
     "firebase-admin": "^11.5.0",
     "next": "^13.2.4",
-    "next-auth": "^4.20.1",
+    "next-auth": "^4.24.5",
     "openai": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
